@@ -18,7 +18,7 @@ By default, each process has 3 file descriptors:
 
 These are not associated necessarily with files, for example, `stdin` = `input()` in Python and `stdout` = `print()` in Python.
 
-# Redirection 
+# Redirection
 
 >**Recall**: Bash is to launch programs (create processes)
 
@@ -43,14 +43,12 @@ $ command > output.txt 2> errors.txt
 #this is the same as
 $ command 2> errors.txt > output.txt
 #to redirect both to the same file
-$ command > errors.txt >&2
+$ command 2> errors.txt >&2
 #this is the same as
-$ command > errors.txt 1>&2
+$ command 2> errors.txt 1>&2
 ```
 
 To redirect `stdin` from a file
 ```bash
 $ command < input.txt
 ```
- And you can pipe 1 command to another
-
