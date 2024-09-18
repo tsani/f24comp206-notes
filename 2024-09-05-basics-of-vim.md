@@ -38,6 +38,7 @@ Command mode also is how you can use vim's find-and-replace:
 	:%s/text to find/text to replace with/
 
 Breaking down this command:
+
 	- % means to affect the entire file. If you leave it out, the
 	  find-and-replace happens only on the current line
 	- s means "substitute". Other letters are possible in this position,
